@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Jura&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <!--font-family: 'Itim', cursive;-->
+    <link rel="stylesheet" href="Main.css"> <!-- This is the CSS file-->
+
+
+</head>
+
+<body>
+    <header>
+        <div class="Banner">
+            <h1> Big things often have small beginnings ~ </h1>
+            <svg height="100" preserveAspectRatio="none" viewBox="0 0 965 90" fill="none" style="width:100%"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 45.2L26.8056 48.91C53.6111 52.9 107.222 59.9 160.833 67.6C214.444 75.3 268.056 82.3 321.667 75.09C375.278 67.6 428.889 45.2 482.5 37.71C536.111 30.5 589.722 37.5 643.333 41.49C696.944 45.2 750.556 45.2 804.167 37.71C857.778 30.5 911.389 15.1 938.194 7.89002L965 0.400024V90H938.194C911.389 90 857.778 90 804.167 90C750.556 90 696.944 90 643.333 90C589.722 90 536.111 90 482.5 90C428.889 90 375.278 90 321.667 90C268.056 90 214.444 90 160.833 90C107.222 90 53.6111 90 26.8056 90H0V45.2Z"
+                    fill="#F9F7F3" />
+            </svg>
+        </div>
+
+    </header>
+    <main>
+        <button class="Buttons btn-Yellow" onclick="assignColours()"> CHOOSE MY
+            COLOURS </button>
+        <div class="Colours">
+            <div id="First colour" onclick="copyHex1()">
+                <div class="box"></div>
+                <p class="Hex-codes"> </p>
+            </div>
+            <div id="Second colour" onclick="copyHex2()">
+                <div class="box">
+                </div>
+                <p class="Hex-codes"> </p>
+            </div>
+            <div id="Third colour" onclick="copyHex3()">
+                <div class="box"></div>
+                <p class="Hex-codes"> </p>
+            </div>
+            <div id="Fourth colour" onclick="copyHex4()">
+                <div class="box"></div>
+                <p class="Hex-codes"> </p>
+            </div>
+        </div>
+        <button class="Buttons btn-Blue" onclick="getTime()"> CHOOSE MY TIME
+        </button>
+        <div class="Cards" id="Time-card">
+
+        </div>
+        <button class="Buttons btn-Green" onclick="getPlace()"> CHOOSE MY PLACE
+        </button>
+        <div class="Cards" id="Place-card">
+
+        </div>
+    </main>
+    <footer> Made by Najette Chouchane </footer>
+    <div id="snackbar">Copied</div>
+</body>
+<script src="Main.js"></script>
+
+</html>

@@ -1,0 +1,214 @@
+.Banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EDE4C1;
+    margin-bottom: 75px;
+
+}
+
+.Banner h1 {
+    font-family: 'Jura', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: 400;
+
+}
+
+.Buttons {
+    font-family: 'Holtwood One SC', serif;
+    font-size: 28px;
+    height: 99px;
+    width: 370px;
+    border-radius: 20px;
+    line-height: 121.7%;
+    letter-spacing: 4.5%;
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.Buttons:active {
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    transform: translateY(2px);
+    color: rgb(56, 72, 72);
+}
+
+.btn-Yellow {
+    background-color: #EDDEA4;
+}
+
+.btn-Yellow:hover {
+    background-color: #e3d394;
+}
+
+.btn-Blue {
+    background-color: #D9F0FC
+}
+
+.btn-Blue:hover {
+    background-color: #c8e6f5
+}
+
+.btn-Green {
+    background-color: #0FA3B1
+}
+
+.btn-Green:hover {
+    background-color: #18b0be
+}
+
+body {
+    background-color: #F9F7F3;
+    margin: 0px;
+
+}
+
+.Cards {
+    background-color: #FCFCFC;
+    height: 173px;
+    width: 516px;
+    margin-top: 40.33px;
+    margin-bottom: 47px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    place-items: center;
+    font-family: 'Itim', cursive;
+    font-size: 34px;
+
+
+}
+
+footer {
+    font-size: 18px;
+    text-align: center;
+}
+
+.Colours {
+    margin-top: 66px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 144px 144px 144px 144px;
+    grid-template-rows: 225px;
+    column-gap: 30px;
+    justify-content: center;
+
+}
+
+
+.box {
+    background-color: #C7C7C7;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 65px;
+    height: 144px;
+    cursor: pointer;
+}
+
+
+.box:active {
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+    transform: translateY(2px);
+}
+
+.Hex-codes {
+    font-family: 'Itim', cursive;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+#snackbar {
+
+    font-family: 'Itim', cursive;
+    font-size: larger;
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 100px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #333;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 0.8s;
+    animation: fadein 0.5s, fadeout 0.5s 0.8s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
